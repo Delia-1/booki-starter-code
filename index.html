@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Cela indique au navigateur de définir la largeur du viewport égale à celle de l'appareil et de ne pas appliquer de zoom initial.​ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +22,8 @@
                 <img src="./images/logo/Booki.png" alt="Booki - Trouvez votre hébergement pour des vacances de rêve" class="logo-booki">
             </h1>
             <nav class="nav-header">
-                <button class="btn-nav-toHover para-16px">Hébergements</button>
-                <button class="btn-nav-toHover para-16px">Activités</button>
+                <a href="#hebergements"><button class="btn-nav-toHover para-16px">Hébergements</button></a>
+                <a href="#activites"><button class="btn-nav-toHover para-16px">Activités</button></a>
             </nav>
         </header>
         <main>
@@ -43,24 +44,25 @@
 
                 <div class="filter-bar ">
                     <p class="filter-bar-title">Filtres</p>
+
                     <button class="filter-item">
                         <i class="fa-solid fa-money-bill-wave"></i>
-                        <h4 class="filter-kword">Economique</h4>
+                        <h3 class="filter-kword">Economique</h3>
                     </button>
 
                     <button class="filter-item">
                         <i class="fa-solid fa-person"></i>
-                        <h4 class="filter-kword">Familial</h4>
+                        <h3 class="filter-kword">Familial</h3>
                     </button>
 
                     <button class="filter-item">
                         <i class="fa-solid fa-heart filter-icon"></i>
-                        <h4 class="filter-kword">Romantique</h4>
+                        <h3 class="filter-kword">Romantique</h3>
                     </button>
 
                     <button class="filter-item">
                         <i class="fa-solid fa-fire"></i>
-                        <h4 class="filter-kword">Nos pépites</h4>
+                        <h3 class="filter-kword">Nos pépites</h3>
                     </button>
                 </div>
                 <div class="info-bar margin-bot">
@@ -72,7 +74,7 @@
 
             </search>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements">
                      <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="cards">
                     <a href="#" class="article">
@@ -198,7 +200,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -252,8 +254,66 @@
                     </div>
                 </section>
             </div>
+            <section id="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="activites-cards">
+                    <a href="#" class="article">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port" class="activites-img">
+                            <div>
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+
+                    </a>
+                    <a href="#" class="article">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues" class="activites-img">
+                            <div>
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+
+                    </a>
+                    <a href="#" class="article">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du Parc national des Calanques" class="activites-img">
+                            <div>
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+
+                    </a>
+                    <a href="#" class="article">
+                        <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde" class="activites-img">
+                        <div>
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </div>
+
+                </a>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="cards">
+                <article class="article">
+                    <h4 class="title"> A propos</h4>
+                    <ul class="list">
+                        <li class="para-16px"><a href="">Fonctionnement du site</a></li>
+                        <li class="para-16px"><a href="">Conditions générales</a></li>
+                        <li class="para-16px"><a href="">Données et confidentialité</a></li>
+                    </ul>
+                </article>
+                <article class="article last">
+                    <h4 class="title">Nos hébergements</h4>
+                    <ul class="list">
+                        <li class="para-16px"><a href="">Charte qualité</a></li>
+                        <li class="para-16px"><a href="">Proposer votre hotel</a></li>
+                    </ul>
+                </article>
+                <article class="article last">
+                    <h4 class="title">Assistance</h4>
+                    <ul class="list">
+                        <li class="para-16px"><a href="">Centre d'aide</a></li>
+                        <li class="para-16px"><a href="">Nous contacter</a></li>
+                    </ul>
+                </article>
+            </div>
+        </footer>
     </div>
 </body>
 
